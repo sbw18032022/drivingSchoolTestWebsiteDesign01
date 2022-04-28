@@ -1,0 +1,211 @@
+/*
+	mainstyle.css
+*/
+
+html, body {
+	position: absolute;
+	width: 100%;
+	left: 0; top: 0;
+	padding: 0; margin: 0;
+	font-size: 18px;
+	font-family: "Verdana", sans-serif;
+}
+
+nav {
+	display: grid;
+	padding: 5%;
+}
+
+#jumboHero {
+	position: relative;
+	display: block;
+	box-shadow: 0px 10px 20px -5px #595959;
+}
+
+#imgDriverid {
+	height: 600px;
+	width: 100%;
+	position: relative;
+}
+
+#heroText {
+	position: absolute;
+	background-color: #ffffff;
+	min-height: 150px;
+	padding: 2%;
+	width: 80%;
+	top: 200px;
+	left: 10%; right: auto;
+}
+
+#lessonsContainer > ul {
+	display: grid;
+	list-style-type: none;
+	padding: 5%;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 800px) {
+	
+	#lessonsContainer > ul {
+		display: grid;
+		list-style-type: none;
+		padding: 5%;
+		grid-template-columns: 1fr;
+	}
+	
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 800px) {
+	
+	#lessonsContainer > ul {
+		display: grid;
+		list-style-type: none;
+		padding: 5%;
+		grid-template-columns: 1fr 1fr;
+	}
+	
+}
+
+.lessonsPanel {
+	margin: 2%;
+	background-color: #edeff6;
+	box-shadow: 5px 5px 20px #595959;
+}
+
+.lessonsPanel > h3 {
+	text-align: center;
+}
+
+.lessonsPanel > p {
+	padding: 5%;
+	max-height: 300px;
+	overflow-y: auto;
+	letter-spacing: 2px;
+}
+
+.lessonsPanel > a {
+	margin-top: auto;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+	padding: 5%;
+	background-color: #5072e5;
+	float: right;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	width: 100px;
+}
+
+#mainHeader {
+	font-size: 2em;
+	text-align: center;
+	font-family: "Arial", sans-serif;
+	text-decoration: none;
+}
+
+#mainHeader:hover {
+	text-decoration: underline;
+}
+
+.fruitMenu {
+	display: inline-block;
+}
+
+a {
+	color: #2f50bd;
+}
+
+.menuLink {
+	margin: 2%;
+	color: #2f50bd;
+	text-decoration: none;
+}
+
+.menuLink:hover {
+	text-decoration: underline;
+}
+
+.subFruitMenu {
+	position: absolute;
+	display: none;
+	
+}
+
+.subFruitMenu a {
+	padding: 2%;
+}
+
+.subFruitMenu a:hover {
+	background-color: #686868;
+	color: #ffffff;
+	padding: 2%;
+}
+
+.fruitMenu:hover .subFruitMenu {
+	background-color: #ffffff;
+	display: grid;
+	padding: 2%;
+	z-index: 1;
+	grid-template-columns: 1fr;
+	box-shadow: 5px 5px 15px #000000;
+}
+
+#testimonials {
+	padding: 2%;
+}
+
+
+#testimonials ul {
+	display: grid;
+	grid-template-columns: 1fr;
+	list-style-type: none;
+}
+
+#testimonials ul li {
+	margin-top: 2%;
+}
+
+@media only screen and (max-width: 300px) {
+	#testimonials ul li {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}
+
+#testimonials {
+	display: block;
+}
+
+.testimonial quote, .testimonial p {
+	display: block;
+}
+
+.testimonial quote {
+	background-color: #cfcfcf;
+	font-size: 1.9em;
+	font-family: "Times New Roman", serif;
+	padding: 2%;
+	font-weight: bold;
+}
+
+
+#testimonialList .testimonial:nth-child(odd) .testimonialImage {
+	float: left;
+}
+
+#testimonialList .testimonial:nth-child(even) .testimonialImage {
+	float: right;
+}
+
+#testimonials img {
+	height: 500px;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	padding: 2%;
+	text-align: center;
+}
